@@ -1,0 +1,21 @@
+<div class="container">
+    <form name="login" class="login-form">
+        <label for="username">Username</label>
+        <input id="username" type="text" class="login-form"
+               required name="name">
+
+        <label for="password">Password</label>
+        <input id="password" type="password" class="login-form"
+               required name="pass">
+        <button class="waves-effect waves-light teal lighten-2 btn">Login</button>
+    </form>
+
+    <div class="row">
+        <div class="col s12" style="text-align: center"><br /><br />
+            <span class="flow-text">No account?<br />
+                <button class="waves-effect waves-light teal lighten-2 btn"
+                        (click)="btnClick();">Register</button>
+            </span>
+        </div>
+    </div>
+</div>

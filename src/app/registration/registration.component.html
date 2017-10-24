@@ -1,0 +1,45 @@
+<div class="container">
+    <form name="register" class="login-form">
+        <div class="row">
+            <div class="col s6">
+                <label for="firstname">First Name</label>
+                <input id="firstname" type="text" class="login-form"
+                       required name="firstname">
+            </div>
+            <div class="col s6">
+                <label for="lastname">Last Name</label>
+                <input id="lastname" type="text" class="login-form"
+                       required name="firstname">
+            </div>
+        </div>
+
+
+       <label for="username">Username</label>
+       <input id="username" type="text" class="login-form"
+              required name="username">
+
+      <label for="email">E-mail</label>
+      <input id="email" type="text" class="login-form"
+             required name="email">
+
+        <label for="password">Password</label>
+        <input id="password" type="password" class="login-form"
+               required name="pass">
+
+       <label for="passwordconf">Confirm password</label>
+       <input id="passwordconf" type="password" class="login-form"
+              required name="passconf">
+
+       <div class="row">
+           <div class="col s12" style="text-align: center"><br /><br />
+               <span class="flow-text">
+                   <button class="waves-effect waves-light btn teal {{btnRegisterColor}}"
+                    (mouseover)="btnRegisterColorChange();"
+                    (mouseout)="btnRegisterColorChange();">
+                       Register</button>
+               </span>
+           </div>
+       </div>
+    </form>
+
+</div>
