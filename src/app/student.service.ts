@@ -9,7 +9,7 @@ import { Student } from './student'
 @Injectable()
 export class StudentService {
 
-  private studentUrl = 'http://localhost:5000/student/'
+  private studentUrl = 'http://104.233.105.140:5000/student/'
   private headers = new Headers({'Content-Type': 'application/json'});
 
   constructor(private http: Http) { }
