@@ -1,6 +1,9 @@
-# HeroUniversity
+# RegistroDeEstudantes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 1.4.9.
+
+Neste projeto, é possível cadastrar, listar e buscar estudantes. O front-end foi desenvolvido utilizando o Angular
+e o back-end, Flask. O banco de dados escolhido foi o MongoDB.
 
 ## Development server
 
