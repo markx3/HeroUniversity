@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="card-panel white black-text" style="text-align: center">
+        <h4>Buscar estudantes</h4>
+        <input id="name" placeholder="Nome" type="text" required
+               name="name" [(ngModel)]="search">
+        <button class="btn-large white-text"
+                (click)="btnSearch();">Buscar</button>
+    </div>
+
+    <div class="row">
+        <div *ngFor="let s of students"
+            class="card-panel teal lighten-2 white-text card-small text-left">
+            <h5>{{s.name}}</h5>
+            <p>
+                Email: {{s.email}}
+            </p>
+            <p>
+                Nascimento: {{s.birth}}
+            </p>
+            <p>
+                CPF: {{s.cpf}}
+            </p>
+            <p>
+                Curso: {{s.course}}
+            </p>
+        </div>
+    </div>
+</div>

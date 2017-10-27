@@ -1,41 +1,46 @@
 <div class="container">
-    <form name="register" class="login-form">
-        <div class="row">
-            <div class="col s6">
-                <label for="firstname">First Name</label>
-                <input id="firstname" type="text" class="login-form"
-                       required name="firstname">
-            </div>
-            <div class="col s6">
-                <label for="lastname">Last Name</label>
-                <input id="lastname" type="text" class="login-form"
-                       required name="firstname">
-            </div>
+    <form class="card-panel white lighten-3" (ngSubmit)="addStudent();">
+        <h4 style="text-align: center">Cadastro</h4>
+        <div class="form-group">
+            <label for="firstname">Nome</label>
+            <input id="name" type="text" class="form-control"
+                   required name="name" [(ngModel)]="model.name">
         </div>
 
 
-       <label for="username">Username</label>
-       <input id="username" type="text" class="login-form"
-              required name="username">
+        <div class="form-group">
+            <label for="cpf">CPF</label>
+            <input id="cpf" type="text" class="form-control"
+                   required name="cpf" [(ngModel)]="model.cpf">
+        </div>
 
-      <label for="email">E-mail</label>
-      <input id="email" type="text" class="login-form"
-             required name="email">
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" class="form-control"
+                   required name="email" [(ngModel)]="model.email">
+        </div>
 
-        <label for="password">Password</label>
-        <input id="password" type="password" class="login-form"
-               required name="pass">
+        <div class="form-group">
+            <label for="birth">Data de nascimento</label>
+            <input id="birth" type="date" class="form-control"
+                   required name="pass" [(ngModel)]="model.birth">
+        </div>
 
-       <label for="passwordconf">Confirm password</label>
-       <input id="passwordconf" type="password" class="login-form"
-              required name="passconf">
+
+       <div class="form-group">
+           <label for="course">Curso</label>
+           <select class="browser-default" name="course" [(ngModel)]="model.course">
+                  <option *ngFor="let cou of courses" [value]="cou">{{cou}}</option>
+           </select>
+       </div>
+
+
 
        <div class="row">
            <div class="col s12" style="text-align: center"><br /><br />
                <span class="flow-text">
-                   <button class="waves-effect waves-light btn teal {{btnRegisterColor}}"
-                    (mouseover)="btnRegisterColorChange();"
-                    (mouseout)="btnRegisterColorChange();">
+                   <button
+                    class="waves-effect waves-light btn teal {{btnRegisterColor}}">
                        Register</button>
                </span>
            </div>

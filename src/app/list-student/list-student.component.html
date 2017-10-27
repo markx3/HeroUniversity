@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor="let s of students;"
+            class="card-panel teal lighten-2 white-text card-small text-left">
+            <h5>{{s.name}}</h5>
+            <p>
+                Email: {{s.email}}
+            </p>
+            <p>
+                Nascimento: {{s.birth}}
+            </p>
+            <p>
+                CPF: {{s.cpf}}
+            </p>
+            <p>
+                Curso: {{s.course}}
+            </p>
+        </div>
+    </div>
+
+
+</div>

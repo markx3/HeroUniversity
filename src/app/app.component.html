@@ -6,15 +6,40 @@
 
 <!--The content below is only a placeholder and can be replaced.-->
 
-<main class="container">
+<main>
     <div class="card-panel teal white-text lighten-2" style="text-align: center;"
-         (click)="btnHeroClick();">
-        <h1>Student Management Service</h1>
-        <h4>University of Heroes</h4>
+         (click)="btnClick();">
+        <h3>Registro Acadêmico</h3>
     </div>
+
+    <div class="app-container">
+      <router-outlet></router-outlet>
+    </div>
+
+    <footer class="page-footer teal lighten-2">
+        <div class="container">
+            <div class="row">
+                <div class="col 16 s12">
+                    <h5 class="white-text">Registro Acadêmico</h5>
+                    <p class="grey-text text-lighten-4">
+                        Sistema simples de cadastro e consulta de estudantes.
+                    </p>
+                </div>
+                <div class="col 14 offset-12 s12">
+                    <h5 class="white-text">Meus links</h5>
+                    <ul>
+                        <li>
+                            <a class="grey-text text-lighten-3"
+                               href="https://github.com/markx3/">GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                @ 2017 Copyright Marcos Felipe Eipper
+            </div>
+        </div>
+    </footer>
 </main>
-
-
-<div class="app-container">
-  <router-outlet></router-outlet>
-</div>

@@ -8,17 +8,27 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 
+import { StudentService } from './student.service';
+import { HomeComponent } from './home/home.component';
+import { ListStudentComponent } from './list-student/list-student.component';
+import { SearchStudentComponent } from './search-student/search-student.component'
+
 const appRoutes: Routes = [
-    { path: '', component: LoginComponent },
+    { path: '', component: HomeComponent },
     { path: 'registration', component: RegistrationComponent },
-    { path: 'login', component: LoginComponent }
+    { path: 'login', component: LoginComponent },
+    { path: 'list', component: ListStudentComponent },
+    { path: 'search', component: SearchStudentComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    HomeComponent,
+    ListStudentComponent,
+    SearchStudentComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +39,7 @@ const appRoutes: Routes = [
         { enableTracing: true }
     )
   ],
-  providers: [AppComponent],
+  providers: [AppComponent, StudentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
