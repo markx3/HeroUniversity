@@ -11,9 +11,9 @@ Para executar o projeto, alguns pacotes deverão ser instalados:
 
 * MongoDB - criar banco `students`
 * Python3 ou superior
-* flask, flask_cors, pymongo`: `python3.5 -m pip install flask flask_cors pymongo`
+* flask, flask_cors, pymongo: `python3.5 -m pip install flask flask_cors pymongo`
 * node, npm - rodar `npm install` na raiz do projeto
-* `ng-cli`: `npm install -g @angular/cli`
+* ng-cli: `npm install -g @angular/cli`
 
 
 ## Development server
